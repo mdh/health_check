@@ -13,7 +13,7 @@ Gem::Specification.new do |gem|
   gem.description = <<-EOF
   	Simple health check of Rails app for uptime monitoring with Pingdom, NewRelic, EngineYard or uptime.openacs.org etc.
   EOF
-  gem.homepage      = "http://ianheggie.github.io/health_check/"
+  gem.homepage      = "https://github.com/ianheggie/health_check"
 
   gem.files         = `git ls-files`.split($/)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
@@ -23,6 +23,5 @@ Gem::Specification.new do |gem|
   gem.add_dependency(%q<rails>, [">= 2.3.0"])
   gem.add_development_dependency(%q<rake>, [">= 0.8.3"])
   gem.add_development_dependency(%q<shoulda>, ["~> 2.11.0"])
-  gem.add_development_dependency(%q<sqlite3>, ["~> 1.3.7"])
   gem.add_development_dependency(%q<bundler>, ["~> 1.2"])
 end
